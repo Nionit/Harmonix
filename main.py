@@ -1,15 +1,13 @@
 import discord
-from discord.ext import commands 
+from discord.ext import commands
 import music
 
 cogs = [music]
 
-client = commands.Bot(command_prefix='?', intents = discord.Intents.all())
+client = commands.Bot(command_prefix='?', intents=discord.Intents.all())
 
 for i in range(len(cogs)):
-  cogs[i].setup(client)
+    cogs[i].setup(client)
 
-
-
-
-client.run("OTMzNzg1NDgwNjYxNzEyOTE2.Yemlfw.TjmFx4Ig0u1WLwuDSBQy4d6rPTU")
+client.run(
+    "OTMzNzg1NDgwNjYxNzEyOTE2.G4hhVs.Oqm93z-xewQMsSK_ObZbRfBq3f9kUSffsY6fmo")
